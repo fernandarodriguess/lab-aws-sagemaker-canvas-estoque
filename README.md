@@ -71,6 +71,7 @@ O dataset possui 25 identificadores de produtos diferentes, no qual apresenta o 
 ## MODELO
 O modelo foi treinado através do Quick Build; priorizando a velocidade. Sendo possível obter o seguinte model status:
 
+
 Avg.wQL (Média Perda Quantil Ponderada) = 0.086 significa que o modelo tem um bom desempenho ao prever a distribuição dos estoques, com um valor relativamente baixo de perda de quantil ponderada.
 
 MAPE (Erro Percentual Médio Absoluto) = 0.290 ou 29% significa que, em média, as previsões do modelo diferem dos valores reais por 29%. Isso fornece uma medida de precisão relativa, indicando que as previsões têm um erro médio de 29% em relação aos valores reais.
@@ -86,34 +87,34 @@ Para a análise do estoque, foi considerado o fator promocional dos produtos, vi
 Durante a análise foi escolhido identificadores de 5 produtos diferentes (IDs 1, 5, 6, 16 e 24 ), no qual possuem frequências promocionais diversas, bem como quantidade em estoque. 
 
 #### O produto de ID 1:
-Registro de estoque (2023-12-31): 91 unidades; 
-Esteve em promoção 6 vezes;
-Demanda histórica (2024-01-19): 16 unidades;
-2024-01-20 P90 de aproximadamente 13 unidades.
+- Registro de estoque (2023-12-31): 91 unidades; 
+- Esteve em promoção 6 vezes;
+- Demanda histórica (2024-01-19): 16 unidades;
+- 2024-01-20 P90 de aproximadamente 13 unidades.
 
 #### O produto de ID 5:
-Registro de estoque (2023-12-31): 95 unidades; 
-Esteve em promoção 3 vezes;
-Demanda histórica (2024-01-19): 21 unidades;
-2024-01-20 P90 de aproximadamente 21 unidades.
+- Registro de estoque (2023-12-31): 95 unidades; 
+- Esteve em promoção 3 vezes;
+- Demanda histórica (2024-01-19): 21 unidades;
+- 2024-01-20 P90 de aproximadamente 21 unidades.
 
 #### O produto de ID 6:
-Registro de estoque (2023-12-31): 56 unidades; 
-Esteve em promoção 2 vezes;
-Demanda histórica (2024-01-19): 0 unidades;
-2024-01-20 P90 de aproximadamente 0 unidades.
+- Registro de estoque (2023-12-31): 56 unidades; 
+- Esteve em promoção 2 vezes;
+- Demanda histórica (2024-01-19): 0 unidades;
+- 2024-01-20 P90 de aproximadamente 0 unidades.
 
 #### O produto de ID 16:
-Registro de estoque (2023-12-31): 97 unidades; 
-Esteve em promoção 2 vezes;
-Demanda histórica (2024-01-19): 33 unidades;
-2024-01-20 P90 de aproximadamente 32 unidades.
+- Registro de estoque (2023-12-31): 97 unidades; 
+- Esteve em promoção 2 vezes;
+- Demanda histórica (2024-01-19): 33 unidades;
+- 2024-01-20 P90 de aproximadamente 32 unidades.
 
 #### O produto de ID 24:
-Registro de estoque (2023-12-31): 56 unidades; 
-Esteve em promoção 4 vezes;
-Demanda histórica (2024-01-19): 0 unidades;
-2024-01-20 P90 de aproximadamente 0 unidades.
+- Registro de estoque (2023-12-31): 56 unidades; 
+- Esteve em promoção 4 vezes;
+- Demanda histórica (2024-01-19): 0 unidades;
+- 2024-01-20 P90 de aproximadamente 0 unidades.
 
 ### CONCLUSÃO
 Logo, o modelo apresentou resultados satisfatórios. De modo que apresenta ser eficaz na gestão de estoques em contextos promocionais, permitindo a otimização dos níveis e minimização de rupturas a partir do P90 (90º percentil).  
