@@ -63,10 +63,10 @@ Como ficará o estoque dos produtos no futuro, com base nos dados históricos.
 O dataset possui 25 identificadores de produtos diferentes, no qual apresenta o dia de atualização de seu estoque; sua situação promocional e a quantidade em estoque. Sendo considerado a sua variação por dia consecutivo, dentro de 20 dias contados desde o seu registro.
 
 ## Colunas do dataset:
-ID_PRODUTO –  identificador do produto
-DIA –  	data de atualização do estoque 
-FLAG_PROMOCAO – situação promocional (1) em promoção e (0) não está em promoção	
-QUANTIDADE_ESTOQUE -> quantidade de produtos em estoque (target)
+- ID_PRODUTO –  identificador do produto
+- DIA –  	data de atualização do estoque 
+- FLAG_PROMOCAO – situação promocional (1) em promoção e (0) não está em promoção	
+- QUANTIDADE_ESTOQUE -> quantidade de produtos em estoque (target)
 
 ## MODELO
 O modelo foi treinado através do Quick Build; priorizando a velocidade. Sendo possível obter o seguinte model status:
