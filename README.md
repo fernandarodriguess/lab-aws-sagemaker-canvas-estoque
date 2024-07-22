@@ -48,7 +48,7 @@ Esperamos que esta experiência tenha sido enriquecedora e que você tenha apren
 
 
 
-## Meu Projeto Previsão de Estoque Inteligente na AWS com SageMaker Canvas
+# Meu Projeto Previsão de Estoque Inteligente na AWS com SageMaker Canvas
 
 DESAFIO: modelo treinado para fazer previsões de estoque.
 
@@ -67,7 +67,6 @@ QUANTIDADE_ESTOQUE -> quantidade de produtos em estoque (target)
 
 MODELO
 O modelo foi treinado através do Quick Build; priorizando a velocidade. Sendo possível obter o seguinte model status:
-Descrição:
 
 Avg.wQL (Média Perda Quantil Ponderada) = 0.086 significa que o modelo tem um bom desempenho ao prever a distribuição dos estoques, com um valor relativamente baixo de perda de quantil ponderada.
 
@@ -116,6 +115,8 @@ Demanda histórica (2024-01-19): 0 unidades;
 CONCLUSÃO
 Logo, o modelo apresentou resultados satisfatórios. De modo que apresenta ser eficaz na gestão de estoques em contextos promocionais, permitindo a otimização dos níveis e minimização de rupturas a partir do P90 (90º percentil).  
 Sendo possível observar a influência das promoções na demanda: o produto ID 1 e produto ID 5 estiveram em promoção diversas vezes e apresentam uma demanda preditiva significativa. Isso mostra que as promoções têm um impacto direto na demanda desses produtos, apresentando a necessidade de manter os níveis de estoque adequados para que evite futuras rupturas.
+
+Link da documentação completa com imagens: https://docs.google.com/document/d/1MFP1S132RHsTRdjLkdQoa1GkAw7Q-9f07Y3eZ1nofO8/edit?usp=sharing
 
 
 
