@@ -50,22 +50,25 @@ Esperamos que esta experiência tenha sido enriquecedora e que você tenha apren
 
 # Meu Projeto Previsão de Estoque Inteligente na AWS com SageMaker Canvas
 
-DESAFIO: modelo treinado para fazer previsões de estoque.
+### DESAFIO
+Modelo treinado para fazer previsões de estoque.
 
-CASE: modelo que avalia a quantidade de produtos em estoque, considerando a situação  promocional.
+### CASE
+Modelo que avalia a quantidade de produtos em estoque, considerando a situação  promocional.
 
-PREVISÃO FUTURA: como ficará o estoque dos produtos no futuro, com base nos dados históricos.
+### PREVISÃO FUTURA
+Como ficará o estoque dos produtos no futuro, com base nos dados históricos.
 
-DATASET
+## DATASET
 O dataset possui 25 identificadores de produtos diferentes, no qual apresenta o dia de atualização de seu estoque; sua situação promocional e a quantidade em estoque. Sendo considerado a sua variação por dia consecutivo, dentro de 20 dias contados desde o seu registro.
 
-Colunas do dataset:
+## Colunas do dataset:
 ID_PRODUTO –  identificador do produto
 DIA –  	data de atualização do estoque 
 FLAG_PROMOCAO – situação promocional (1) em promoção e (0) não está em promoção	
 QUANTIDADE_ESTOQUE -> quantidade de produtos em estoque (target)
 
-MODELO
+## MODELO
 O modelo foi treinado através do Quick Build; priorizando a velocidade. Sendo possível obter o seguinte model status:
 
 Avg.wQL (Média Perda Quantil Ponderada) = 0.086 significa que o modelo tem um bom desempenho ao prever a distribuição dos estoques, com um valor relativamente baixo de perda de quantil ponderada.
@@ -78,41 +81,41 @@ RMSE (Raiz do Erro Quadrático Médio) =  1.535 indica que a magnitude dos erros
 
 MASE (Erro Escalado Médio Absoluto) = 0.180 significa que o erro absoluto médio das previsões do modelo é 18% do erro absoluto médio de um modelo de referência simples, como a média móvel. Um valor menor que 1 indica que o modelo de previsão é melhor que o modelo de referência. Neste caso, 0.180 é um valor muito bom, mostrando que o modelo tem um desempenho significativamente melhor.
 
-ANÁLISE PREDITIVA
+## ANÁLISE PREDITIVA
 Para a análise do estoque, foi considerado o fator promocional dos produtos, visto que nessa situação é crucial evitar rupturas de estoque, mesmo que isso signifique ter um estoque maior que o necessário na maioria dos casos; sendo assim, utilizado o P90 (90º Percentil) que representa um cenário onde apenas 10% das previsões são maiores que este valor, indicando que está se preparando para quase todos os cenários de alta demanda.
 Durante a análise foi escolhido identificadores de 5 produtos diferentes (IDs 1, 5, 6, 16 e 24 ), no qual possuem frequências promocionais diversas, bem como quantidade em estoque. 
 
-O produto de ID 1:
+#### O produto de ID 1:
 Registro de estoque (2023-12-31): 91 unidades; 
 Esteve em promoção 6 vezes;
 Demanda histórica (2024-01-19): 16 unidades;
 2024-01-20 P90 de aproximadamente 13 unidades.
 
-O produto de ID 5:
+#### O produto de ID 5:
 Registro de estoque (2023-12-31): 95 unidades; 
 Esteve em promoção 3 vezes;
 Demanda histórica (2024-01-19): 21 unidades;
 2024-01-20 P90 de aproximadamente 21 unidades.
 
-O produto de ID 6:
+#### O produto de ID 6:
 Registro de estoque (2023-12-31): 56 unidades; 
 Esteve em promoção 2 vezes;
 Demanda histórica (2024-01-19): 0 unidades;
 2024-01-20 P90 de aproximadamente 0 unidades.
 
-O produto de ID 16:
+#### O produto de ID 16:
 Registro de estoque (2023-12-31): 97 unidades; 
 Esteve em promoção 2 vezes;
 Demanda histórica (2024-01-19): 33 unidades;
 2024-01-20 P90 de aproximadamente 32 unidades.
 
-O produto de ID 24:
+#### O produto de ID 24:
 Registro de estoque (2023-12-31): 56 unidades; 
 Esteve em promoção 4 vezes;
 Demanda histórica (2024-01-19): 0 unidades;
 2024-01-20 P90 de aproximadamente 0 unidades.
 
-CONCLUSÃO
+### CONCLUSÃO
 Logo, o modelo apresentou resultados satisfatórios. De modo que apresenta ser eficaz na gestão de estoques em contextos promocionais, permitindo a otimização dos níveis e minimização de rupturas a partir do P90 (90º percentil).  
 Sendo possível observar a influência das promoções na demanda: o produto ID 1 e produto ID 5 estiveram em promoção diversas vezes e apresentam uma demanda preditiva significativa. Isso mostra que as promoções têm um impacto direto na demanda desses produtos, apresentando a necessidade de manter os níveis de estoque adequados para que evite futuras rupturas.
 
